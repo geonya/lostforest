@@ -33,19 +33,7 @@
 		align-items: center;
 		text-align: center;
 	}
-	.hero_content h1 {
-		font-size: 6rem;
-		letter-spacing: 2rem;
-	}
-	.hero_content h4 {
-		font-size: 2rem;
-		letter-spacing: 0.9rem;
-	}
-	.hero_content h3 {
-		font-size: 2rem;
-		letter-spacing: 0.6rem;
-		margin-bottom: 8rem;
-	}
+
 	video {
 		position: fixed;
 		top: 0;
@@ -69,6 +57,21 @@
 	}
 	@media (max-width: 375px) {
 		.hero_content h1 {
+			font-size: 1rem;
+			letter-spacing: 0.5rem;
+		}
+		.hero_content h4 {
+			font-size: 0.5rem;
+			letter-spacing: 0.2rem;
+		}
+		.hero_content h3 {
+			font-size: 0.7rem;
+			letter-spacing: 0.3rem;
+			margin-bottom: 4rem;
+		}
+	}
+	@media (min-width: 375px) {
+		.hero_content h1 {
 			font-size: 2rem;
 			letter-spacing: 0.5rem;
 		}
@@ -78,6 +81,36 @@
 		}
 		.hero_content h3 {
 			font-size: 0.8rem;
+			letter-spacing: 0.3rem;
+			margin-bottom: 4rem;
+		}
+	}
+	@media (min-width: 768px) {
+		.hero_content h1 {
+			font-size: 3rem;
+			letter-spacing: 0.5rem;
+		}
+		.hero_content h4 {
+			font-size: 1.2rem;
+			letter-spacing: 0.2rem;
+		}
+		.hero_content h3 {
+			font-size: 1.5rem;
+			letter-spacing: 0.7rem;
+			margin-bottom: 4rem;
+		}
+	}
+	@media (min-width: 1200px) {
+		.hero_content h1 {
+			font-size: 4rem;
+			letter-spacing: 1.5rem;
+		}
+		.hero_content h4 {
+			font-size: 1.5rem;
+			letter-spacing: 0.6rem;
+		}
+		.hero_content h3 {
+			font-size: 2rem;
 			letter-spacing: 0.3rem;
 			margin-bottom: 4rem;
 		}
