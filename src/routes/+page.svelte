@@ -12,7 +12,7 @@
 	</section>
 </hero>
 
-<video src="/videos/bg-forest.mp4" autoplay muted loop />
+<video src="/videos/bg-forest.mp4" autoplay muted loop playsinline />
 
 <style>
 	hero {
@@ -51,8 +51,35 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 100%;
+		height: auto;
 		object-fit: cover;
 		z-index: -1;
+	}
+	@media (min-aspect-ratio: 16/9) {
+		video {
+			width: 100%;
+			height: auto;
+		}
+	}
+	@media (max-aspect-ratio: 16/9) {
+		video {
+			width: auto;
+			height: 100%;
+		}
+	}
+	@media (max-width: 375px) {
+		.hero_content h1 {
+			font-size: 2rem;
+			letter-spacing: 0.5rem;
+		}
+		.hero_content h4 {
+			font-size: 0.8rem;
+			letter-spacing: 0.2rem;
+		}
+		.hero_content h3 {
+			font-size: 0.8rem;
+			letter-spacing: 0.3rem;
+			margin-bottom: 4rem;
+		}
 	}
 </style>
