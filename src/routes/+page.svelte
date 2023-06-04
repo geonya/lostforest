@@ -1,7 +1,14 @@
+<script lang="ts">
+</script>
+
 <hero>
 	<section class="hero_content">
-		<h1>Welcome to Lost Forest</h1>
-		<h3>Only the lost find a new way.</h3>
+		<div />
+		<div style="line-height: 0.3rem;">
+			<h1>Lost Forest</h1>
+			<h4>Only the lost find a new way</h4>
+		</div>
+		<h3>2023.07 Coming Soon</h3>
 	</section>
 </hero>
 
@@ -19,16 +26,25 @@
 		z-index: 1;
 	}
 	.hero_content {
-		display: grid;
-		place-items: center;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
 		text-align: center;
-		color: #fff;
 	}
 	.hero_content h1 {
-		font-size: 3rem;
+		font-size: 6rem;
+		letter-spacing: 2rem;
+	}
+	.hero_content h4 {
+		font-size: 2rem;
+		letter-spacing: 0.9rem;
 	}
 	.hero_content h3 {
-		font-size: 1.5rem;
+		font-size: 2rem;
+		letter-spacing: 0.6rem;
+		margin-bottom: 8rem;
 	}
 	video {
 		position: fixed;
