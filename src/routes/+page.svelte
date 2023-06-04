@@ -4,7 +4,7 @@
 <hero>
 	<section class="hero_content">
 		<div />
-		<div style="line-height: 0.3rem;">
+		<div style="line-height: 0.5rem;">
 			<h1>Lost Forest</h1>
 			<h4>Only the lost find a new way</h4>
 		</div>

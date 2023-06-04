@@ -3,4 +3,9 @@ body {
 	font-size: 16px;
 	line-height: 1.5;
 	color: #ecf0f1;
+	-ms-overflow-style: none; /* IE and 엣지 스크롤 제거 */
+	scrollbar-width: none; /* 파이어폭스 스크롤제거 */
+}
+body::-webkit-scrollbar {
+	display: none; /* 사파리 스크롤제거 */
 }
