@@ -13,7 +13,7 @@
 			<h3>2023.07 Coming Soon</h3>
 		</section>
 	</article>
-	<article id="About">
+	<article id="About" style="background-color:#444;">
 		<section class="section_content">
 			<div />
 			<div>
