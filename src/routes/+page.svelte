@@ -4,7 +4,7 @@
 <hero>
 	<section class="hero_content">
 		<div />
-		<div style="line-height: 0.5rem;">
+		<div>
 			<h1>Lost Forest</h1>
 			<h4>Only the lost find a new way</h4>
 		</div>
@@ -16,14 +16,10 @@
 
 <style>
 	hero {
-		position: fixed;
-		top: 0;
-		left: 0;
 		width: 100%;
-		height: 100%;
+		height: 100vh;
 		display: grid;
 		place-items: center;
-		z-index: 1;
 	}
 	.hero_content {
 		height: 100%;
