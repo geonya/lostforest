@@ -23,6 +23,16 @@
 			<h3>나만의 숲속 작은 산장, Lost Forest</h3>
 		</section>
 	</article>
+	<article id="Menu">
+		<section class="section_content">
+			<div />
+			<div>
+				<h2>Menu</h2>
+				<h4>맛있는 커피, 베이커리, 브런치가 있는 곳</h4>
+			</div>
+			<h3>나만의 숲속 작은 산장, Lost Forest</h3>
+		</section>
+	</article>
 	<article id="Reservation" style="background-color:#444;">
 		<section class="section_content">
 			<div />
