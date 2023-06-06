@@ -59,6 +59,7 @@
 <style>
 	main {
 		overflow-y: scroll;
+		overflow-x: hidden;
 		scroll-snap-type: y mandatory;
 		-webkit-overflow-scrolling: touch;
 		height: 100vh;
