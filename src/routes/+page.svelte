@@ -92,6 +92,7 @@
 		height: auto;
 		object-fit: cover;
 		z-index: 1;
+		pointer-events: none;
 	}
 	@media (min-aspect-ratio: 16/9) {
 		video {
