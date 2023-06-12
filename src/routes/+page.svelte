@@ -23,11 +23,11 @@
 			<h3>나만의 숲속 작은 산장, Lost Forest</h3>
 		</section>
 	</article>
-	<article id="Menu">
+	<article id="Food">
 		<section class="section_content">
 			<div />
 			<div>
-				<h2>Menu</h2>
+				<h2>Food</h2>
 				<h4>맛있는 커피, 베이커리, 브런치가 있는 곳</h4>
 			</div>
 			<h3>나만의 숲속 작은 산장, Lost Forest</h3>
@@ -69,7 +69,7 @@
 		/* only supported in Chrome */
 		scroll-snap-stop: always;
 		width: 100%;
-		height: 100vh;
+		height: 100%;
 		position: relative;
 		display: grid;
 		place-items: center;

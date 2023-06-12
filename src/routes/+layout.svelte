@@ -14,8 +14,9 @@
 		<a id="Logo" href="/" on:click|preventDefault={() => scrollTo('Main')}>Logo</a>
 		<div class="nav-content">
 			<a href="/" on:click|preventDefault={() => scrollTo('About')}>About</a>
-			<a href="/" on:click|preventDefault={() => scrollTo('Menu')}>Menu</a>
-			<a href="/" on:click|preventDefault={() => scrollTo('Reservation')}>Resrevation</a>
+			<a href="/" on:click|preventDefault={() => scrollTo('Food')}>Food</a>
+			<a href="/" on:click|preventDefault={() => scrollTo('Reservation')}>Reservation</a>
+			<a href="/store">Store</a>
 		</div>
 		<a href="/" on:click|preventDefault={() => scrollTo('Contact')}>Contact</a>
 	</nav>
