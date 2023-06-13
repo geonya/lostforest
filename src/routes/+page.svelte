@@ -1,4 +1,19 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
+	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		const queryParams = $page.url.searchParams.get('section');
+		if (queryParams) {
+			const el = document.getElementById(queryParams);
+			if (el) {
+				el.scrollIntoView({ behavior: 'smooth' });
+			} else {
+				goto('/');
+			}
+		}
+	});
 </script>
 
 <main>

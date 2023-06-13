@@ -1,7 +1,10 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import '../global.css';
 
 	const scrollTo = (id: string) => {
+		const queryParams = new URLSearchParams({ section: id }).toString();
+		goto(`/?${queryParams}`);
 		const el = document.getElementById(id);
 		if (el) {
 			el.scrollIntoView({ behavior: 'smooth' });
@@ -11,7 +14,7 @@
 
 <header>
 	<nav>
-		<a id="Logo" href="/" on:click|preventDefault={() => scrollTo('Main')}>Logo</a>
+		<a id="Logo" href="/" on:click={() => scrollTo('Main')}>Logo</a>
 		<div class="nav-content">
 			<a href="/" on:click|preventDefault={() => scrollTo('About')}>About</a>
 			<a href="/" on:click|preventDefault={() => scrollTo('Food')}>Food</a>
