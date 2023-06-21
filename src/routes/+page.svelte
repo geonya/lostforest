@@ -1,18 +1,24 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { onMount } from 'svelte';
-	onMount(() => {
+	import { afterUpdate, onMount, tick } from 'svelte';
+
+	let main: HTMLElement;
+	afterUpdate(() => {
 		const queryParams = $page.url.searchParams.get('section');
 		if (queryParams) {
-			const section = document.getElementById(queryParams);
-			if (section) {
-				section.scrollIntoView({ behavior: 'smooth' });
-			}
+			tick().then(() => {
+				const section = document.getElementById(queryParams);
+				if (section) {
+					section.scrollIntoView({ behavior: 'smooth' });
+				}
+			});
+		} else {
+			main.scrollTo({ top: 0, behavior: 'smooth' });
 		}
 	});
 </script>
 
-<main>
+<main bind:this={main}>
 	<article id="Main">
 		<video src="/videos/bg-forest.mp4" autoplay muted loop playsinline />
 		<section class="section_content">

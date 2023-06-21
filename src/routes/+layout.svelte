@@ -11,7 +11,7 @@
 			<a href="/?section=Reservation">Reservation</a>
 			<a href="/store">Store</a>
 		</div>
-		<a href="/contact">Contact</a>
+		<a href="/?section=Contact">Contact</a>
 	</nav>
 </header>
 <slot />
