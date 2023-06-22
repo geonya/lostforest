@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { SECRET_INSTAGRAM_API_KEY } from '$env/static/private';
+	import { PUBLIC_INSTAGRAM_API_KEY } from '$env/static/public';
 	import { afterUpdate, tick } from 'svelte';
 
 	let main: HTMLElement;
@@ -8,7 +8,7 @@
 	const fetchInstagram = async () => {
 		const requestData = {
 			client_id: '1358203908061719',
-			client_secret: SECRET_INSTAGRAM_API_KEY,
+			client_secret: PUBLIC_INSTAGRAM_API_KEY,
 			code: 'AQCASiIHm5zFG5dZOxliZmekiVJj0MVmHpQwhTNhWoJTfmvC2rz19LRXItMmZRhgtxNSF_ZdSLyXqJK_HN-S5fmM03UHjKuSjvE1vIvLy050XdIli4jOXRrvKVbJY7o4CKOQRHcIlySiJxDarEsV3H9aCjYpC54P3-S_MfwrRol6fDqvdA3TKcmK4UUAUXy8NzWHY4AVwDEQBSw5iaYaZHDk2gjS_HLYMX4Htj-5i-wywQ',
 			grant_type: 'authorization_code',
 			redirect_uri: 'https://lostforest.co.kr/'
