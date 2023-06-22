@@ -1,3 +1,9 @@
+@font-face {
+	font-family: 'SB어그로M';
+	src: url('/fonts/SB 어그로 M.ttf') format('truetype');
+	/* 다른 폰트 포맷에 대해서도 지원하려면 여기에 추가합니다. */
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -106,7 +112,7 @@ section {
 	display: block;
 }
 body {
-	font-family: 'Noto Sans KR', sans-serif;
+	font-family: 'SB어그로M', sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
 	color: #eee;

@@ -30,7 +30,7 @@
 			<div />
 			<div>
 				<button on:click={fetchInstagram}>Instagram</button>
-				<h1>Lost Forest</h1>
+				<h1>LOST FOREST</h1>
 				<h4>Only the lost find a new way</h4>
 			</div>
 			<h3>2023.07 Coming Soon</h3>
