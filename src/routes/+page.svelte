@@ -3,6 +3,11 @@
 	import { afterUpdate, onMount, tick } from 'svelte';
 
 	let main: HTMLElement;
+
+	const fetchInstagram = () => {
+		console.log('Fetch Instagram');
+	};
+
 	afterUpdate(() => {
 		const queryParams = $page.url.searchParams.get('section');
 		if (queryParams) {
@@ -24,6 +29,7 @@
 		<section class="section_content">
 			<div />
 			<div>
+				<button on:click={fetchInstagram}>Instagram</button>
 				<h1>Lost Forest</h1>
 				<h4>Only the lost find a new way</h4>
 			</div>
