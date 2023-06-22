@@ -1,11 +1,35 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { afterUpdate, onMount, tick } from 'svelte';
+	import { env } from '$env/dynamic/private';
+	import { afterUpdate, tick } from 'svelte';
 
 	let main: HTMLElement;
 
-	const fetchInstagram = () => {
-		console.log('Fetch Instagram');
+	const fetchInstagram = async () => {
+		const requestData = {
+			client_id: '1358203908061719',
+			client_secret: env.SECRET_INSTAGRAM_API_KEY,
+			code: 'AQCASiIHm5zFG5dZOxliZmekiVJj0MVmHpQwhTNhWoJTfmvC2rz19LRXItMmZRhgtxNSF_ZdSLyXqJK_HN-S5fmM03UHjKuSjvE1vIvLy050XdIli4jOXRrvKVbJY7o4CKOQRHcIlySiJxDarEsV3H9aCjYpC54P3-S_MfwrRol6fDqvdA3TKcmK4UUAUXy8NzWHY4AVwDEQBSw5iaYaZHDk2gjS_HLYMX4Htj-5i-wywQ',
+			grant_type: 'authorization_code',
+			redirect_uri: 'https://lostforest.co.kr/'
+		};
+		try {
+			const response = await fetch('https://api.instagram.com/oauth/access_token', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify(requestData)
+			});
+			if (response.ok) {
+				const data = await response.json();
+				console.log(data);
+			} else {
+				console.error(response);
+			}
+		} catch (error) {
+			console.error(error);
+		}
 	};
 
 	afterUpdate(() => {
